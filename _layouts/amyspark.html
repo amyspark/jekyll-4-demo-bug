@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+<body>
+  <h1>Jekyll Bug Demo</h1>
+  <ul>
+  {% for page in site.data.amyspark.opensource %}
+    <li>{{ page.title }} {{ page.date | date_to_string }}</li>
+  {% endfor %}
+  </ul>
+</body>
+</html>
